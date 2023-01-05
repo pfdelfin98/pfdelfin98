@@ -1,0 +1,294 @@
+@font-face {
+    font-family: poppinsmedium;
+    src: url(http://localhost/jpaifo/vendor/fonts/leaguespartan-medium.ttf);
+    }
+body {
+    margin: 0;
+    font-family: poppinsmedium;
+    background-color:rgb(243, 243, 243);
+  }
+  
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding:10px;
+    
+  }
+  .topnav img {
+      width:50px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .title{
+    text-decoration:none; 
+    color:black; 
+    margin-left:10px;
+    font-size:18px;
+}
+.active{
+    margin-left:20px;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1; 
+    }
+  }
+
+@keyframes slideInFromTop2 {
+    0% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+    .modal{
+ animation: 1s ease-out 0s 1 slideInFromTop2;
+}
+  .img{
+    animation: 1s ease-out 0s 1 slideInFromTop;
+  }
+
+
+  .topnav button, .topnav .employer{
+    float: right;
+    display: block;
+    color: #535252;
+    text-align: center;
+    padding: 12px 16px;
+    margin-right:10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* Change the color of links on hover */
+
+  /* Add an active class to highlight the current page */
+  .topnav a.active, .topnav button.active {
+    color: white;
+  }
+  
+  a{
+    text-decoration:none;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      text-align:center;
+
+    }
+    .topnav .form{
+        display:none;
+    }
+    .topnav button, .topnav .employer{
+      text-align:center !important;
+      }
+      
+    .topnav button:not(:first-child) {display: none;}
+    .topnav button.icon {
+      float: right;
+      display: block;
+      text-align:center;
+    }
+  }
+
+  .container-fluid>img{
+      width:200px;
+  }
+  .btn-outline-primary:hover{
+    color:white !important;
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align:center;
+
+    }
+    .topnav .form{
+        display:none;
+    }
+    .topnav button, .topnav .employer{
+        text-align:center !important;
+    }
+    .topnav.responsive button.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        
+      }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .topnav.responsive button{
+        float: none;
+        display: block;
+        text-align: center;
+      }
+  }
+
+  .form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    width:300px;
+    height:40px;
+    position:absolute;
+    margin-top:-45px;
+    margin-left:270px;
+  }
+
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+
+
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+#error-msg{ display:none }
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+#featureContainer .carousel-inner .carousel-item > div {
+    display: none;
+}
+#featureContainer .carousel-inner .carousel-item > div:first-child {
+    display: block;
+}
+}
+
+#featureContainer .carousel-inner .carousel-item.active,
+#featureContainer .carousel-inner .carousel-item-next,
+#featureContainer .carousel-inner .carousel-item-prev {
+display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+#featureContainer .carousel-inner .carousel-item-end.active,
+#featureContainer .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+#featureContainer .carousel-inner .carousel-item-start.active, 
+#featureContainer .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+#featureContainer .card img{
+    width: 90%;
+    height: 40vh;
+}
+#featureContainer .carousel-item{
+    justify-content: space-between;
+}
+}
+@media (max-width: 767px) {
+#featureContainer .card img{
+    width: 100%;
+    height: 75vh;
+}
+}
+#featureContainer .carousel-inner .carousel-item-end,
+#featureContainer .carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+#featureContainer .card{
+border: 0;
+}
+#featureContainer .card{
+position: relative;
+}
+#featureContainer .card .card-img-overlays{
+position: absolute;
+bottom: 15%;
+left: 5%;
+color: #fff;
+}
+#featureContainer a{
+text-decoration: none;
+}
+#featureContainer .indicator{
+border: 1px solid rgb(202, 202, 202);
+padding: 3px 6px 3px 6px;
+}
+#featureContainer .indicator:hover{
+background-color: blue;
+border: 1px solid blue;
+transition: 100ms;
+}
+#featureContainer .indicator:hover{
+color: white;
+transition: 200ms;
+}
+#featureContainer .indicator {
+color: lightgray;
+}
+#featureContainer .float-end{
+padding-top: 10px;
+}
+
+.contain-header{
+background: rgba(200, 301, 200, 0.3);
+}
+.maintxt {position: relative;}
+.maintxt > img, .overlay-text {position: absolute;}
+.c>img{
+position: absolute;
+opacity: 0.5;
+filter: brightness(90%);
+}
