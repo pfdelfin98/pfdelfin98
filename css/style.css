@@ -80,9 +80,16 @@ header{
     color: var(--bg-color);
 }
 .nav-link:hover{
+    transform: scale(1.10) !important;
     color: var(--main-color);
     background: var(--container-color);
-    transition: 0.3s all linear;
+    transition: 0.2s all linear;
+}
+.nav-fname{
+    color: #fff;
+}
+.nav-span{
+   color: var(--main-color);
 }
 /* Menu Icon */
 .menu-icon{
@@ -264,10 +271,9 @@ header{
     background: var(--container-color);
     border-radius: 0.4rem;
     transition: 0.5 all cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 .services-box:hover{
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
     transition: 0.5 all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .services-box .bx{

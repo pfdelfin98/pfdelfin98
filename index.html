@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Box Icon-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <!-- Animate on Scroll Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Scroll Top -->
@@ -23,7 +24,7 @@
         <!--Nav-->
         <div class="nav container">
             <!-- Logo -->
-            <a href="#" class="logo">Paulo Delfin</a>
+            <a href="#" class="logo nav-fname">Paulo <span class="nav-span">Delfin</span></a>
             <!-- Navbar -->
             <ul class="navbar">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -43,21 +44,21 @@
       <!-- Home -->
       <section class="home container" id="home">
         <div class="home-content">
-            <div class="home-img">
+            <div class="home-img" data-aos="zoom-in" data-aos-duration="400">
                 <img src="img/me2.png" alt="">
             </div>
             <div class="home-text">
-                <h3>Hello</h3>
-                <h2>I'm <span class="color">Paulo</span></h2>
-                <p>
-                    I'm a <span class="color">freelance web developer</span> with a strong passion for building <span class="color">web applications </span> & <span class="color">Cyber Security</span> with great user experience.
+                <h3 data-aos="fade-down"  data-aos-delay="30" data-aos-duration="800">Hello</h3>
+                <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="60">I'm <span class="color" >Paulo</span></h2>
+                <p data-aos="fade-down" data-aos-delay="90" data-aos-duration="1200">
+                    I'm a <span class="color">full-stack web developer & UI/UX designer</span> with a strong passion for building <span class="color">web applications </span>  with great user experience.
                     <br> Here's a bit more <span class="color">about me.</span>
                 </p>
                 <!-- Social -->
                 <div class="social">
-                    <a href="https://www.facebook.com/pfdelfin98/"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://github.com/pfdelfin98"><i class="bx bxl-github"></i></a>
-                    <a href="https://www.linkedin.com/in/paulo-delfin-0768391b4/"><i class="bx bxl-linkedin"></i></a>
+                    <a  data-aos-once="true" data-aos-delay="300" data-aos="zoom-in" href="https://www.facebook.com/pfdelfin98/"><i class="bx bxl-facebook"></i></a>
+                    <a  data-aos-once="true" data-aos-delay="600" data-aos="zoom-in" href="https://github.com/pfdelfin98"><i class="bx bxl-github"></i></a>
+                    <a  data-aos-once="true" data-aos-delay="900" data-aos="zoom-in" href="https://www.linkedin.com/in/paulo-delfin-0768391b4/"><i class="bx bxl-linkedin"></i></a>
 
                 </div>
             </div>
@@ -69,10 +70,10 @@
         <h2 class="heading">About</h2>
         <!-- About Content -->
         <div class="about-content">
-            <div class="about-data">
+            <div class="about-data" data-aos="zoom-in-up" data-aos-duration="400">
                 <span>About Me</span>
-                <h2>Web Developer, <br>
-                    Cyber Security & Web Designer
+                <h2>Full-Stack <br>Web Developer &<br>
+                      UI/UX Designer
                 </h2>
                 <a href="cv.pdf" class="btn" download="">
                     Download CV
@@ -80,8 +81,8 @@
                 </a>
             </div>
 
-            <div class="about-text">
-                <p>Hello! I am Paulo Delfin, Web Developer, Graphic Designer and Cyber Security.</p>
+            <div class="about-text" data-aos="zoom-in-left"  data-aos-delay="500" data-aos-duration="800">
+                <p>Hello! I am Paulo Delfin, Web Developer, and UI/UX Designer</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non omnis quidem aliquam, reiciendis ea culpa?</p>
                  <p>Get your project book with contact button.</p>
             </div>
@@ -93,19 +94,19 @@
         <h2 class="heading">Services</h2>
         <!-- Services Content -->
         <div class="services-content">
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                    <h2>Web Development</h2>
+            <div class="services-box" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="400">
+                <i class="bx bx-brush"></i>
+                    <h2>UI/UX Designing</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consectetur dignissimos dolorum est quia sit!</p>               
             </div>
-            <div class="services-box">
-                <i class="bx bx-lock"></i>
-                    <h2>Cyber Security</h2>
+            <div class="services-box" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="400">
+                <i class="bx bx-code-alt"></i>
+                    <h2>Web Development</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consectetur dignissimos dolorum est quia sit!</p>
             </div>
-            <div class="services-box">
+            <div class="services-box" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="400">
                 <i class="bx bx-brush"></i>
-                    <h2>Web Designing</h2>
+                    <h2>Graphic Designing</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consectetur dignissimos dolorum est quia sit!</p>
             </div>
         </div>
@@ -116,7 +117,7 @@
         <h2 class="heading">Portfolio</h2>
         <!-- Portfolio Content -->
         <div class="portfolio-content">
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="400">
                 <img src="img/portfolio-1.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -126,27 +127,27 @@
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="400">
                 <img src="img/portfolio-1.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
-                    <h2>Web Designing</h2>
+                    <h2>UI/UX Design</h2>
                     <a href="#">
                         <i class="bx bx-link-alt"></i>
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="400">
                 <img src="img/portfolio-1.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
-                    <h2>Cyber Security</h2>
+                    <h2>Graphic Design</h2>
                     <a href="#">
                         <i class="bx bx-link-alt"></i>
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="400">
                 <img src="img/portfolio-1.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -164,17 +165,17 @@
         <h2 class="heading">Projects</h2>
         <!-- Projects Content -->
         <div class="projects-content">
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in">
                 <h2>285+</h2>
                 <span>Project Completed</span>
             </div>
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in">
                 <h2>190+</h2>
                 <span>Website Develop</span>
             </div>
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in">
                 <h2>200+</h2>
-                <span>PHappy Clients</span>
+                <span>Happy Clients</span>
             </div>
         </div>
       </section>
@@ -274,6 +275,12 @@
 
       <!-- Sweetalert JS -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     
+     <!-- Animate on Scroll JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
       <!-- Link To Swiper JS -->
       <script src="js/swiper-bundle.min.js"></script>
